@@ -28,4 +28,8 @@ def bash_operators():
         mode="poke"
     )
 
+    #as of now all the tasks of this DAG are independent
+    #To make dependent, that is adding dependencies bw tasks (UPSTREAM AND DOWNSTREAM)
+    wait_for_csv >> list_dag
+
 dags=bash_operators()
