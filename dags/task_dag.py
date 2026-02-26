@@ -2,7 +2,7 @@ from datetime import datetime
 from airflow.sdk import dag, task
 
 @dag(
-    schedule="@daily",
+    schedule="* * * * *",
     start_date=datetime(2025, 2, 18),
     catchup=False,
     tags=["demo","task_dag"]
