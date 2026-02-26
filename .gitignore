@@ -1,2 +1,34 @@
-/dag/__pycache__
-/logs/
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Airflow
+airflow.db
+airflow.cfg
+webserver_config.py
+unittests.cfg
+
+# Airflow folders
+logs/
+airflow-webserver.pid
+airflow-scheduler.pid
+
+# DAG compiled files
+dags/__pycache__/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
