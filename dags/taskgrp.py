@@ -15,6 +15,7 @@ def taskgrp():#grouping of similar tasks to organise and strucuting
     
         @task
         def extract_user_playlist():
+            raise Exception("Error while extracing playlist")
             print("extracting user playlist")
         
         extract_user()
